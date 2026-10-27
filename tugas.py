@@ -92,4 +92,12 @@ tk.Label(root, text="Inggris").grid(row=4, column=0, padx=10, pady=5)
 entry_inggris = tk.Entry(root)
 entry_inggris.grid(row=4, column=1, pady=5)
 
+tk.Button(root, text="Hasil Prediksi",
+          command=submit_nilai).grid(
+    row=5, column=0, columnspan=2, pady=10
+)
 
+label_hasil = tk.Label(root, text="Prediksi Fakultas: ")
+label_hasil.grid(row=6, column=0, columnspan=2, pady=5)
+
+root.mainloop()
